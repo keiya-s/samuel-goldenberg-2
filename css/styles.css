@@ -1,0 +1,320 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;;
+  background-color: black;
+  color:white;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+.container{
+  max-width: 1170px;
+  width:100%;
+  margin:0 auto;
+}
+
+/* ↓loading */
+#loading{
+  width:100%;
+  z-index: 101;
+  height:100vh;;
+  position: relative;
+  position: fixed;
+  background-color: black;
+  text-align: center;
+  vertical-align: top;
+}
+
+#title{
+  font-family: Geo;
+  font-weight: normal;
+  font-size: 90px;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#title span{
+
+}
+
+
+
+
+
+/* ↓header */
+
+header{
+  height:180px;
+  position: relative;
+  font-family: Geo;
+}
+
+.header-scroll{
+  height:80px;
+}
+
+
+.header-container{
+  max-width: 1170px;
+  margin:0 auto;
+  height:180px;
+  padding: 20px 8px 0 8px;
+  border-bottom: 4px double white;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.container-scroll{
+  height:80px;
+  padding: 0 8px 0 8px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.band-name{
+  font-size: 72px;
+  width:80%;
+  float: center;
+  margin: 0;
+  display: inline-block;
+  transition: 0.05s;
+}
+
+.band-name-scroll{
+  font-size: 40px;
+  line-height: 80px;
+  width:30%;
+  text-align: center;
+}
+
+
+.band-logo-scroll h2{
+  font-size: 30px;
+  line-height: 80px;
+  text-align: left;
+}
+
+
+
+.header-menu{
+width:90%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+transition: 0.1s;
+}
+
+.header-menu-scroll{
+  float: right;
+  width:65%;
+
+}
+
+.header-menu a{
+  color:white;
+  display:inline-block;
+  font-size: 25px;
+  line-height:30px;
+  margin:25px 0 25px 0;
+}
+
+.header-menu a:hover{
+  color:skyblue;
+  border-bottom:2px solid skyblue;
+  /* transform: scale(1.2); */
+  transition: all 0.5s;
+}
+
+.menu-icon{
+  color:white;
+  float: right;
+  font-size: 40px;
+  padding: 15px 25px 15px 0;
+  display: none!important;
+}
+
+/* ↓top-slides */
+
+.top-slides{
+margin: 0 auto;
+}
+
+
+.top-slides .container{
+  width: 85%;
+  margin:10px auto 10px auto;
+  position: relative;
+}
+
+.slides{
+  width:100%;
+  margin: 0 auto;
+}
+
+.slide{
+width:100%;
+margin: 0 auto;
+display: none;
+/* box-shadow: 0px 0px 10px 5px #999; */
+}
+
+.active{
+  display: block;
+}
+
+.change-btn-wrapper{
+  width: 100%;
+  height:45px;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  margin: auto;
+
+}
+
+.change-btn{
+  font-size: 30px;
+  margin: 0 20px;
+  color: rgba(65, 105, 225, 0.9);
+  cursor: pointer;
+}
+
+
+.prev-btn{
+  display: none;
+  float: left;
+}
+
+.next-btn{
+  float:right;
+}
+
+.index-btn-wrapper{
+  width:15%;
+  left: 0;
+  right:0;
+  margin:auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.index-btn{
+  font-size: 30px;
+  color: rgba(65, 105, 225, 0.9);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover{
+  transform: scale(1.3);
+  transition-duration: 0.3s;
+}
+
+/* ↓top-wrapper */
+
+.top-wrapper .container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px double white;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.news-wrapper{
+  width:55%;
+}
+
+.news-wrapper h3{
+  font-weight:normal;
+  margin: 30px auto;
+  text-align: center;
+}
+
+
+.news-items{
+  border-top:1px solid white;
+}
+
+.news{
+  border-bottom:1px solid white;
+  display: flex;
+  padding-bottom:10px;
+}
+
+.date{
+  width:20%;
+}
+
+.news-content a{
+  color:skyblue;
+}
+
+.news-content a:hover{
+  text-decoration: underline;
+}
+
+.navigation{
+  overflow: hidden;
+}
+
+.news-prev{
+  float: left;
+  width: 15%;
+  text-align: center;
+  padding:10px 0;
+}
+
+.news-next{
+  float: right;
+  text-align: center;
+  width:15%;
+  padding:10px 0;
+}
+
+.sns-wrapper{
+  width:30%;
+}
+
+.sns-wrapper h3{
+  font-weight:normal;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.sns-tem{
+  width:100%;
+    text-align: center;
+}
+
+.sns-title{
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* ↓footer */
+#copyright{
+  text-align: right;
+  padding-right: 10px;
+}
